@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="2.4">
+  <GlyphOrder src="SourceSansPro-ExtraLightItalic.ttf.GlyphOrder.ttx"/>
+  <head src="SourceSansPro-ExtraLightItalic.ttf._h_e_a_d.ttx"/>
+  <hhea src="SourceSansPro-ExtraLightItalic.ttf._h_h_e_a.ttx"/>
+  <maxp src="SourceSansPro-ExtraLightItalic.ttf._m_a_x_p.ttx"/>
+  <OS_2 src="SourceSansPro-ExtraLightItalic.ttf.O_S_2f_2.ttx"/>
+  <hmtx src="SourceSansPro-ExtraLightItalic.ttf._h_m_t_x.ttx"/>
+  <cmap src="SourceSansPro-ExtraLightItalic.ttf._c_m_a_p.ttx"/>
+  <fpgm src="SourceSansPro-ExtraLightItalic.ttf._f_p_g_m.ttx"/>
+  <prep src="SourceSansPro-ExtraLightItalic.ttf._p_r_e_p.ttx"/>
+  <cvt src="SourceSansPro-ExtraLightItalic.ttf._c_v_t.ttx"/>
+  <loca src="SourceSansPro-ExtraLightItalic.ttf._l_o_c_a.ttx"/>
+  <glyf src="SourceSansPro-ExtraLightItalic.ttf._g_l_y_f.ttx"/>
+  <name src="SourceSansPro-ExtraLightItalic.ttf._n_a_m_e.ttx"/>
+  <post src="SourceSansPro-ExtraLightItalic.ttf._p_o_s_t.ttx"/>
+  <gasp src="SourceSansPro-ExtraLightItalic.ttf._g_a_s_p.ttx"/>
+  <BASE src="SourceSansPro-ExtraLightItalic.ttf.B_A_S_E_.ttx"/>
+  <GDEF src="SourceSansPro-ExtraLightItalic.ttf.G_D_E_F_.ttx"/>
+  <GPOS src="SourceSansPro-ExtraLightItalic.ttf.G_P_O_S_.ttx"/>
+  <GSUB src="SourceSansPro-ExtraLightItalic.ttf.G_S_U_B_.ttx"/>
+  <DSIG src="SourceSansPro-ExtraLightItalic.ttf.D_S_I_G_.ttx"/>
+</ttFont>
