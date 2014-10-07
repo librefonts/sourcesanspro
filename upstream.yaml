@@ -1,0 +1,1534 @@
+Project:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: File `FONTLOG.txt` does not exist in root of upstream repository
+    methodDoc: Repository does contain FONTLOG.txt file
+    methodName: test_fontlog_txt_exists
+    name: bakery_lint.tests.upstream.test_check_upstream_sources
+    tags: [note]
+    targets: &id002 [upstream-repo]
+    tool: FontBakery
+  fixed: []
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: Check that glyphs has same number of contours across family
+    methodName: test_font_prepolation_glyph_contours
+    name: bakery_lint.tests.upstream.test_prepolation
+    tags: [note]
+    targets: &id001 [upstream-repo]
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: Check that glyphs has same number of points across family
+    methodName: test_font_prepolation_glyph_points
+    name: bakery_lint.tests.upstream.test_prepolation
+    tags: [note]
+    targets: *id001
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: Check glyph names are all the same across family
+    methodName: test_font_test_prepolation_glyph_names
+    name: bakery_lint.tests.upstream.test_prepolation
+    tags: [note]
+    targets: *id001
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: Repository does contain bakery.yaml configuration file
+    methodName: test_bakery_yaml_exists
+    name: bakery_lint.tests.upstream.test_check_upstream_sources
+    tags: [note]
+    targets: *id002
+    tool: FontBakery
+  - autofix: false
+    err_msg: ''
+    methodDoc: Are all copyright notices the same in all styles?
+    methodName: test_copyright_notices_same_across_family
+    name: bakery_lint.tests.upstream.test_check_upstream_sources
+    tags: [note]
+    targets: *id002
+    tool: FontBakery
+  - autofix: false
+    err_msg: ''
+    methodDoc: Repository does containDESCRIPTION.en_us.html file
+    methodName: test_description_html_exists
+    name: bakery_lint.tests.upstream.test_check_upstream_sources
+    tags: [note]
+    targets: *id002
+    tool: FontBakery
+  - autofix: false
+    err_msg: ''
+    methodDoc: Repository does contain METADATA.json file
+    methodName: test_metadata_json_exists
+    name: bakery_lint.tests.upstream.test_check_upstream_sources
+    tags: [note]
+    targets: *id002
+    tool: FontBakery
+  - autofix: false
+    err_msg: ''
+    methodDoc: Check that diacritic glyph are made completely with composite
+    methodName: test_diacritic_made_as_component
+    name: bakery_lint.tests.upstream.test_diacritic
+    tags: [note]
+    targets: &id003 [upstream-repo]
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: Check that diacritic glyph are made completely with mark method
+    methodName: test_diacritic_made_as_mark_to_mark
+    name: bakery_lint.tests.upstream.test_diacritic
+    tags: [note]
+    targets: *id003
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: Check that diacritic glyph are made completely with flat method
+    methodName: test_diacritic_made_as_own_glyphs
+    name: bakery_lint.tests.upstream.test_diacritic
+    tags: [note]
+    targets: *id003
+    tool: lint
+SourceSansPro-Black.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''BASE'', ''GDEF'', ''GPOS'',
+      ''GSUB'', ''hmtx'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: &id006 [note]
+    targets: &id005 [upstream-ttx]
+    tool: fontTools
+  fixed:
+  - &id004
+    autofix: true
+    err_msg: '''SourceSansPro-Black.otf'' != ''SourceSansProBlack-Regular'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: &id007 [note]
+    targets: &id008 [upstream, upstream-ttx]
+    tool: lint
+  - *id004
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: &id010 [note]
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: &id011 [note]
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: &id012 [note]
+    targets: &id013 [upstream-ttx]
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: &id014 [note]
+    targets: &id015 [upstream-ttx]
+    tool: TTFont
+SourceSansPro-Black.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''BASE'', ''GDEF'', ''GPOS'', ''GSUB'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  fixed:
+  - &id009
+    autofix: true
+    err_msg: '''SourceSansPro-Black.ttf'' != ''SourceSansProBlack-Regular'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id009
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont
+SourceSansPro-BlackIt.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''BASE'', ''GDEF'', ''GPOS'',
+      ''GSUB'', ''hmtx'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  fixed:
+  - &id016
+    autofix: true
+    err_msg: '''SourceSansPro-BlackIt.otf'' != ''SourceSansProBlack-Italic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id016
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont
+SourceSansPro-BlackItalic.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''BASE'', ''GDEF'', ''GPOS'', ''GSUB'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  fixed:
+  - &id017
+    autofix: true
+    err_msg: '''SourceSansPro-BlackItalic.ttf'' != ''SourceSansProBlack-Italic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id017
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont
+SourceSansPro-Bold.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''BASE'', ''GDEF'', ''GPOS'',
+      ''GSUB'', ''hmtx'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  fixed:
+  - &id018
+    autofix: true
+    err_msg: '''SourceSansPro-Bold.otf'' != ''SourceSansPro-Bold'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id018
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont
+SourceSansPro-Bold.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''BASE'', ''GDEF'', ''GPOS'', ''GSUB'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  fixed:
+  - &id019
+    autofix: true
+    err_msg: '''SourceSansPro-Bold.ttf'' != ''SourceSansPro-Bold'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id019
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont
+SourceSansPro-BoldIt.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''BASE'', ''GDEF'', ''GPOS'',
+      ''GSUB'', ''hmtx'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  fixed:
+  - &id020
+    autofix: true
+    err_msg: '''SourceSansPro-BoldIt.otf'' != ''SourceSansPro-BoldItalic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id020
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont
+SourceSansPro-BoldItalic.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''BASE'', ''GDEF'', ''GPOS'', ''GSUB'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  fixed:
+  - &id021
+    autofix: true
+    err_msg: '''SourceSansPro-BoldItalic.ttf'' != ''SourceSansPro-BoldItalic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id021
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont
+SourceSansPro-ExtraLight.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''BASE'', ''GDEF'', ''GPOS'',
+      ''GSUB'', ''hmtx'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: 200 not greater than or equal to 250
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont
+  fixed:
+  - &id022
+    autofix: true
+    err_msg: '''SourceSansPro-ExtraLight.otf'' != ''SourceSansProExtraLight-Regular'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id022
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+SourceSansPro-ExtraLight.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''BASE'', ''GDEF'', ''GPOS'', ''GSUB'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: 200 not greater than or equal to 250
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont
+  fixed:
+  - &id023
+    autofix: true
+    err_msg: '''SourceSansPro-ExtraLight.ttf'' != ''SourceSansProExtraLight-Regular'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id023
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+SourceSansPro-ExtraLightIt.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''BASE'', ''GDEF'', ''GPOS'',
+      ''GSUB'', ''hmtx'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: 200 not greater than or equal to 250
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont
+  fixed:
+  - &id024
+    autofix: true
+    err_msg: '''SourceSansPro-ExtraLightIt.otf'' != ''SourceSansProExtraLight-Italic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id024
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+SourceSansPro-ExtraLightItalic.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''BASE'', ''GDEF'', ''GPOS'', ''GSUB'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: 200 not greater than or equal to 250
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont
+  fixed:
+  - &id025
+    autofix: true
+    err_msg: '''SourceSansPro-ExtraLightItalic.ttf'' != ''SourceSansProExtraLight-Italic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id025
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+SourceSansPro-It.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''BASE'', ''GDEF'', ''GPOS'',
+      ''GSUB'', ''hmtx'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  fixed:
+  - &id026
+    autofix: true
+    err_msg: '''SourceSansPro-It.otf'' != ''SourceSansPro-Italic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id026
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont
+SourceSansPro-Italic.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''BASE'', ''GDEF'', ''GPOS'', ''GSUB'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  fixed:
+  - &id027
+    autofix: true
+    err_msg: '''SourceSansPro-Italic.ttf'' != ''SourceSansPro-Italic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id027
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont
+SourceSansPro-Light.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''BASE'', ''GDEF'', ''GPOS'',
+      ''GSUB'', ''hmtx'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  fixed:
+  - &id028
+    autofix: true
+    err_msg: '''SourceSansPro-Light.otf'' != ''SourceSansProLight-Regular'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id028
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont
+SourceSansPro-Light.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''BASE'', ''GDEF'', ''GPOS'', ''GSUB'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  fixed:
+  - &id029
+    autofix: true
+    err_msg: '''SourceSansPro-Light.ttf'' != ''SourceSansProLight-Regular'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id029
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont
+SourceSansPro-LightIt.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''BASE'', ''GDEF'', ''GPOS'',
+      ''GSUB'', ''hmtx'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  fixed:
+  - &id030
+    autofix: true
+    err_msg: '''SourceSansPro-LightIt.otf'' != ''SourceSansProLight-Italic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id030
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont
+SourceSansPro-LightItalic.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''BASE'', ''GDEF'', ''GPOS'', ''GSUB'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  fixed:
+  - &id031
+    autofix: true
+    err_msg: '''SourceSansPro-LightItalic.ttf'' != ''SourceSansProLight-Italic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id031
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont
+SourceSansPro-Regular.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''BASE'', ''GDEF'', ''GPOS'',
+      ''GSUB'', ''hmtx'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  fixed:
+  - &id032
+    autofix: true
+    err_msg: '''SourceSansPro-Regular.otf'' != ''SourceSansPro-Regular'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id032
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont
+SourceSansPro-Regular.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''BASE'', ''GDEF'', ''GPOS'', ''GSUB'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  fixed:
+  - &id033
+    autofix: true
+    err_msg: '''SourceSansPro-Regular.ttf'' != ''SourceSansPro-Regular'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id033
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont
+SourceSansPro-Semibold.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''BASE'', ''GDEF'', ''GPOS'',
+      ''GSUB'', ''hmtx'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  fixed:
+  - &id034
+    autofix: true
+    err_msg: '''SourceSansPro-Semibold.otf'' != ''SourceSansProSemibold-Regular'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id034
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont
+SourceSansPro-Semibold.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''BASE'', ''GDEF'', ''GPOS'', ''GSUB'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  fixed:
+  - &id035
+    autofix: true
+    err_msg: '''SourceSansPro-Semibold.ttf'' != ''SourceSansProSemibold-Regular'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id035
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont
+SourceSansPro-SemiboldIt.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''BASE'', ''GDEF'', ''GPOS'',
+      ''GSUB'', ''hmtx'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  fixed:
+  - &id036
+    autofix: true
+    err_msg: '''SourceSansPro-SemiboldIt.otf'' != ''SourceSansProSemibold-Italic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id036
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont
+SourceSansPro-SemiboldItalic.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''BASE'', ''GDEF'', ''GPOS'', ''GSUB'', ''DSIG'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id006
+    targets: *id005
+    tool: fontTools
+  fixed:
+  - &id037
+    autofix: true
+    err_msg: '''SourceSansPro-SemiboldItalic.ttf'' != ''SourceSansProSemibold-Italic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id037
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id011
+    targets: *id005
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id012
+    targets: *id013
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id014
+    targets: *id015
+    tool: TTFont

@@ -1,0 +1,1022 @@
+Fonts
+  All fonts have the same character sets.
+  Font:
+    Common name: Source Sans Pro
+    Sub family: Bold Italic
+    Style: italic
+    Weight: bold
+    Fixed width: no
+    Fixed sizes: yes
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 856
+    Character count: 676
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro
+    Sub family: Italic
+    Style: italic
+    Weight: normal
+    Fixed width: no
+    Fixed sizes: no
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS Version 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 858
+    Character count: 678
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro
+    Sub family: Regular
+    Weight: normal
+    Fixed width: no
+    Fixed sizes: no
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS Version 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 1115
+    Character count: 682
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro Semibold
+    Sub family: Semibold Italic
+    Style: italic
+    Weight: bold
+    Fixed width: no
+    Fixed sizes: yes
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 856
+    Character count: 676
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro
+    Sub family: Bold Italic
+    Style: italic
+    Weight: bold
+    Fixed width: no
+    Fixed sizes: no
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS Version 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 858
+    Character count: 678
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro Black
+    Sub family: Black Italic
+    Style: italic
+    Weight: bold
+    Fixed width: no
+    Fixed sizes: no
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS Version 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 858
+    Character count: 678
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro Black
+    Sub family: Black Italic
+    Style: italic
+    Weight: bold
+    Fixed width: no
+    Fixed sizes: yes
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 856
+    Character count: 676
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro Light
+    Sub family: Light
+    Weight: normal
+    Fixed width: no
+    Fixed sizes: no
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS Version 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 1115
+    Character count: 682
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro ExtraLight
+    Sub family: ExtraLight Italic
+    Style: italic
+    Weight: normal
+    Fixed width: no
+    Fixed sizes: no
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS Version 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 858
+    Character count: 678
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro
+    Sub family: Bold
+    Weight: bold
+    Fixed width: no
+    Fixed sizes: no
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS Version 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 1115
+    Character count: 682
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro Semibold
+    Sub family: Semibold
+    Weight: bold
+    Fixed width: no
+    Fixed sizes: no
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS Version 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 1115
+    Character count: 682
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro
+    Sub family: Italic
+    Style: italic
+    Weight: normal
+    Fixed width: no
+    Fixed sizes: yes
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 856
+    Character count: 676
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro Black
+    Sub family: Black
+    Weight: bold
+    Fixed width: no
+    Fixed sizes: yes
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 1113
+    Character count: 680
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro
+    Sub family: Bold
+    Weight: bold
+    Fixed width: no
+    Fixed sizes: yes
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 1113
+    Character count: 680
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro Semibold
+    Sub family: Semibold
+    Weight: bold
+    Fixed width: no
+    Fixed sizes: yes
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 1113
+    Character count: 680
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro Black
+    Sub family: Black
+    Weight: bold
+    Fixed width: no
+    Fixed sizes: no
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS Version 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 1115
+    Character count: 682
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro
+    Sub family: Regular
+    Weight: normal
+    Fixed width: no
+    Fixed sizes: yes
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 1113
+    Character count: 680
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro Light
+    Sub family: Light Italic
+    Style: italic
+    Weight: normal
+    Fixed width: no
+    Fixed sizes: yes
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 856
+    Character count: 676
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro Light
+    Sub family: Light Italic
+    Style: italic
+    Weight: normal
+    Fixed width: no
+    Fixed sizes: no
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS Version 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 858
+    Character count: 678
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro ExtraLight
+    Sub family: ExtraLight
+    Weight: normal
+    Fixed width: no
+    Fixed sizes: no
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS Version 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 1115
+    Character count: 682
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro Semibold
+    Sub family: Semibold Italic
+    Style: italic
+    Weight: bold
+    Fixed width: no
+    Fixed sizes: no
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS Version 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 858
+    Character count: 678
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro Light
+    Sub family: Light
+    Weight: normal
+    Fixed width: no
+    Fixed sizes: yes
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 1113
+    Character count: 680
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro ExtraLight
+    Sub family: ExtraLight Italic
+    Style: italic
+    Weight: normal
+    Fixed width: no
+    Fixed sizes: yes
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 856
+    Character count: 676
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+  Font:
+    Common name: Source Sans Pro ExtraLight
+    Sub family: ExtraLight
+    Weight: normal
+    Fixed width: no
+    Fixed sizes: yes
+    Copyright: Copyright 2010, 2012 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.050;PS 1.000;hotconv 1.0.70;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Paul D. Hunt
+    Glyph count: 1113
+    Character count: 680
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 29
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full

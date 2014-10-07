@@ -1,0 +1,12 @@
+commit: HEAD
+process_files: [SourceSansPro-Italic.ttf.ttx, SourceSansPro-Regular.ttf.ttx, SourceSansPro-BoldItalic.ttf.ttx,
+  SourceSansPro-BlackItalic.ttf.ttx, SourceSansPro-Light.ttf.ttx, SourceSansPro-ExtraLightItalic.ttf.ttx,
+  SourceSansPro-Bold.ttf.ttx, SourceSansPro-Semibold.ttf.ttx, SourceSansPro-Black.ttf.ttx,
+  SourceSansPro-LightItalic.ttf.ttx, SourceSansPro-ExtraLight.ttf.ttx, SourceSansPro-SemiboldItalic.ttf.ttx,
+  src/SourceSansPro-BoldIt.otf.ttx, src/SourceSansPro-SemiboldIt.otf.ttx, src/SourceSansPro-BlackIt.otf.ttx,
+  src/SourceSansPro-It.otf.ttx, src/SourceSansPro-Black.otf.ttx, src/SourceSansPro-Bold.otf.ttx,
+  src/SourceSansPro-Semibold.otf.ttx, src/SourceSansPro-Regular.otf.ttx, src/SourceSansPro-LightIt.otf.ttx,
+  src/SourceSansPro-Light.otf.ttx, src/SourceSansPro-ExtraLightIt.otf.ttx, src/SourceSansPro-ExtraLight.otf.ttx]
+pyftsubset: --notdef-outline --name-IDs=* --hinting
+subset: [latin]
+ttfautohint: -l 7 -r 28 -G 50 -x 13 -w "G"
